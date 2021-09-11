@@ -1,0 +1,23 @@
+cabal-version:      2.4
+name:               nix-user-chroot
+version:            0.1.0.0
+synopsis:           nix-user-chroot written in Haskell
+
+license:            NONE
+author:             Siddharth Verma
+maintainer:         siddharthverma314@gmail.com
+
+executable nix-user-chroot
+    main-is:          Main.hs
+    other-modules:    Args
+                    , Chroot
+    build-depends:    base
+                    , optparse-applicative
+                    , text
+                    , unix
+                    , directory
+                    , filepath
+                    , linux-mount
+                    , linux-namespaces
+    hs-source-dirs:   app
+    default-language: Haskell2010
